@@ -5,9 +5,7 @@ class Solution {
         for(int i =0; i<= A.length-1 ;i++)
         {
             if(A[i] == n)
-                n++;
-
-                
+                n++;      
         }
         return n;
     }
