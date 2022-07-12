@@ -11,7 +11,7 @@ class Solution {
         for(int i = start ;i<=end ;i++)
         {
             curr.add(i);
-         combination(i+1, end , curr , res, k , target-i);
+         combination(i+1, end , curr , res, k , target-i);  // example target is 10 so by target-i there will come a point where target = 0
             curr.remove(curr.size()-1);
             }
     }
