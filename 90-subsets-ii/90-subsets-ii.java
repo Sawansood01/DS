@@ -15,7 +15,5 @@ public void subset( int index, int[] nums ,List<Integer> curr , List<List<Intege
         subset(i+1, nums , curr , res);
             curr.remove(curr.size()-1);
     }
-    
-   
 }
 }
