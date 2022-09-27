@@ -1,30 +1,30 @@
 class Solution {
     public int maxProduct(int[] A ) {
          if (A.length == 0) return 0;
-   int max = A[0], min = A[0], totalMax = A[0];
-   for (int i = 1; i < A.length; i++) {
-       int tempMax = A[i] * max;
-       int tempMin = A[i] * min;
-       max = Math.max(Math.max(tempMax,tempMin), A[i]);
-       min = Math.min(Math.min(tempMax,tempMin), A[i]);
-       totalMax = Math.max(totalMax, max);
-   }
-   return totalMax;
-}
+ int prod1 = A[0],prod2 = A[0],result = A[0];
+    
+    for(int i=1;i<A.length;i++) {
+        int temp = Math.max(A[i],Math.max(prod1*A[i],prod2*A[i]));
+        prod2 = Math.min(A[i],Math.min(prod1*A[i],prod2*A[i]));
+        prod1 = temp;
+        
+        result = Math.max(result,prod1);
+    }
+    
+    return result;
         
         
-//         if(nums.length == 1)
-//             return nums[0];
-//         int p = 1 , mp =0;
-//         for(int i =0;i<nums.length-1;i++)
-//         {
-//             p *= nums[i];
-//             if(p > mp)
-//             {
-//                 mp = p;
-//             }
-           
-//         }
-//         return mp;
+     
+        // int p = A[0], max=A[0];
+        // for(int i = 0;i< A.length; i++)
+        // {
+        //     for(int j = i+1 ; j< A.length -1 ; j++)
+        //     {
+        //         p = A[i]*A[j];
+        //         max = Math.max(p, max);
+        //     }
+        // }
+        // return max;
+    }
     
 }
