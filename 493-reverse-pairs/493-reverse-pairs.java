@@ -2,7 +2,6 @@ class Solution {
      public int reversePairs(int[] nums) {
         return mergeSort(nums, 0 , nums.length-1);
     }
-    
     // merge sort modified
     private int mergeSort(int[] nums, int start, int end){
         if(start>=end)
@@ -26,10 +25,6 @@ class Solution {
             nums1[i] = nums[i+start];
         for(int j=0; j<n2; j++)
             nums2[j] = nums[mid+1+j];
-        
-        // System.out.println("******************");
-        // System.out.println(Arrays.toString(nums1));
-        // System.out.println(Arrays.toString(nums2));
         
         // Here comes our logic to count pairs
         int count=0;
