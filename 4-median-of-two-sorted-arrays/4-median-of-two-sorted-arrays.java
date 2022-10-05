@@ -40,6 +40,8 @@ class Solution {
         }
 
     return median;
+    }
+}
 //          int o=res.length;
 //         if(o%2!=0)
 //         {
@@ -48,5 +50,44 @@ class Solution {
 //         else
 //    return (double)(res[(o-1)/2] + res[o/2])/2.0;
             
-    }
-}
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
